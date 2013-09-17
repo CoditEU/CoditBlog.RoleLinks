@@ -1,0 +1,248 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="6702ec42-a3f3-4134-90b8-1a00f1e4a43c" LowerBound="1.1" HigherBound="54.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="CoditBlog.RoleLinks" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="c39b5710-41a7-42e1-837a-ec3fc0ce6cf5" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Rp_IDOCType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5ae368b8-e659-417e-9304-5c52f4252d37" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Receive" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="3f0cf6b6-39b5-4d85-9be9-0120346dfdb8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.38">
+                    <om:Property Name="Ref" Value="CoditBlog.RoleLinks.Schemas.ZINVOIC02_Receive" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="292848ff-5d60-432a-8790-77206e0f0d47" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SpInvoice" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b6a2d73a-5d4c-47f9-b4ed-a6bff888058c" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Send" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="1fb0c3df-9fb6-4dbd-bdbc-55a3c7d95e48" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.31">
+                    <om:Property Name="Ref" Value="CoditBlog.RoleLinks.Schemas.InvoiceOut" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="11dc802c-6d09-4e44-8ca9-da11ae032564" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="53.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ConsumerRoleOrchestration" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceLinkDeclaration" OID="836033ca-8882-4895-8a4c-8e369952efd4" ParentLink="ServiceDeclaration_ServiceLinkDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="7" />
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="RoleName" Value="Provider" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CoditBlog.RoleLinks.rlInvoiceType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="rlInvoice" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6e9fc7cd-cf18-41fb-96f1-2c732bd26835" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="sPartyName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="43a8778f-a29a-4355-814a-30b936895bd1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="Type" Value="CoditBlog.RoleLinks.Schemas.ZINVOIC02_Receive" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="925b7d77-6c43-47e5-917d-f733e52b5903" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="Type" Value="CoditBlog.RoleLinks.Schemas.InvoiceOut" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOut" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="d0ad0a57-179a-4cc9-94a3-f38fafe86c53" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="7f338a2a-26d2-4ffc-a6dc-343df8f3a581" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="39.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Rp_IDOC" />
+                    <om:Property Name="MessageName" Value="msgIn" />
+                    <om:Property Name="OperationName" Value="Receive" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="rcvIDOC" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="cbe63814-5ed7-4837-9b24-7393fd43346c" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="41.1">
+                    <om:Property Name="Expression" Value="sPartyName = xpath(msgIn,&quot;string(/*[local-name()='Receive' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Idoc/3/INVOIC02/ZINVOIC02/731/Receive']/*[local-name()='idocData' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Idoc/3/INVOIC02/ZINVOIC02/731/Receive']/*[local-name()='EDI_DC40' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/3/INVOIC02/ZINVOIC02/731']/*[local-name()='RCVPRN' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']/text())&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ExtractParty" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Construct" OID="3d08ab98-e631-428c-bd24-fad6b68226f3" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="49.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="cnstrMsgOut" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="195119b1-c128-436b-a76b-3b82eb0cf732" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="46.1">
+                        <om:Property Name="ClassName" Value="CoditBlog.RoleLinks.Maps.IDOC_to_InvoiceOut" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="IDOC_to_InvoiceOut" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="07ae80f0-6449-40b1-90e0-44183ee7023f" ParentLink="Transform_InputMessagePartRef" LowerBound="45.83" HigherBound="45.88">
+                            <om:Property Name="MessageRef" Value="msgIn" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="ab639195-9f20-42a2-abd5-4b65a6cd1f64" ParentLink="Transform_OutputMessagePartRef" LowerBound="45.28" HigherBound="45.34">
+                            <om:Property Name="MessageRef" Value="msgOut" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageAssignment" OID="db8d4594-5100-45b3-86be-eb41a74c3b60" ParentLink="ComplexStatement_Statement" LowerBound="46.1" HigherBound="48.1">
+                        <om:Property Name="Expression" Value="rlInvoice(Microsoft.XLANGs.BaseTypes.DestinationParty) = new Microsoft.XLANGs.BaseTypes.Party(sPartyName, &quot;OrganizationName&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="assgnPartnerName" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="27f5b8ba-01e4-43bb-ab94-427f049b45a8" ParentLink="Construct_MessageRef" LowerBound="42.23" HigherBound="42.29">
+                        <om:Property Name="Ref" Value="msgOut" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="f3b200e9-bd1b-4b15-9bba-290ebe900faa" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="51.1">
+                    <om:Property Name="MessageName" Value="msgOut" />
+                    <om:Property Name="OperationName" Value="Send" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ServiceLinkName" Value="rlInvoice" />
+                    <om:Property Name="ServiceLinkPortTypeName" Value="CoditBlog.RoleLinks.SpInvoice" />
+                    <om:Property Name="ServiceLinkRoleName" Value="Provider" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="sndInvoice" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="750b8988-d645-4a13-a29d-fa785949009e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="29.1" HigherBound="31.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CoditBlog.RoleLinks.Rp_IDOCType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Rp_IDOC" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="293fb6a2-a16e-45a3-8130-44df8bb06aa2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="29.1" HigherBound="30.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceLinkType" OID="42ff97f5-16b7-4b17-aca1-060954be5c63" ParentLink="Module_ServiceLinkType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="rlInvoiceType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="RoleDeclaration" OID="9214466f-d5f0-4519-8345-8adeac34ec16" ParentLink="ServiceLinkType_RoleDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Provider" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PortTypeRef" OID="c302d6db-4a28-4075-9d3b-7d429f447ca2" ParentLink="RoleDeclaration_PortTypeRef" LowerBound="22.13" HigherBound="22.22">
+                    <om:Property Name="Ref" Value="CoditBlog.RoleLinks.SpInvoice" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="PortTypeRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="RoleDeclaration" OID="975af87d-379b-4aae-88ba-5c31865f7fb6" ParentLink="ServiceLinkType_RoleDeclaration" LowerBound="24.1" HigherBound="24.1">
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Consumer" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module CoditBlog.RoleLinks
+{
+    internal porttype Rp_IDOCType
+    {
+        oneway Receive
+        {
+            Schemas.ZINVOIC02_Receive
+        };
+    };
+    public porttype SpInvoice
+    {
+        oneway Send
+        {
+            Schemas.InvoiceOut
+        };
+    };
+    internal servicelinktype rlInvoiceType
+    {
+        Provider
+        {
+            SpInvoice
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ConsumerRoleOrchestration
+    {
+        servicelink uses rlInvoiceType.Provider rlInvoice;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Rp_IDOCType Rp_IDOC;
+        message Schemas.ZINVOIC02_Receive msgIn;
+        message Schemas.InvoiceOut msgOut;
+        System.String sPartyName;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7f338a2a-26d2-4ffc-a6dc-343df8f3a581")]
+            activate receive (Rp_IDOC.Receive, msgIn);
+            sPartyName = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cbe63814-5ed7-4837-9b24-7393fd43346c")]
+            sPartyName = xpath(msgIn,"string(/*[local-name()='Receive' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Idoc/3/INVOIC02/ZINVOIC02/731/Receive']/*[local-name()='idocData' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Idoc/3/INVOIC02/ZINVOIC02/731/Receive']/*[local-name()='EDI_DC40' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/3/INVOIC02/ZINVOIC02/731']/*[local-name()='RCVPRN' and namespace-uri()='http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/']/text())");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3d08ab98-e631-428c-bd24-fad6b68226f3")]
+            construct msgOut
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("195119b1-c128-436b-a76b-3b82eb0cf732")]
+                transform (msgOut) = CoditBlog.RoleLinks.Maps.IDOC_to_InvoiceOut (msgIn);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("db8d4594-5100-45b3-86be-eb41a74c3b60")]
+                rlInvoice(Microsoft.XLANGs.BaseTypes.DestinationParty) = new Microsoft.XLANGs.BaseTypes.Party(sPartyName, "OrganizationName");
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f3b200e9-bd1b-4b15-9bba-290ebe900faa")]
+            send (rlInvoice[CoditBlog.RoleLinks.SpInvoice].Send, msgOut);
+        }
+    }
+}
+

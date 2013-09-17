@@ -1,0 +1,78 @@
+<Receive xmlns="http://Microsoft.LobServices.Sap/2007/03/Idoc/3/INVOIC02/ZINVOIC02/731/Receive">
+	<idocData>
+		<EDI_DC40 xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/3/INVOIC02/ZINVOIC02/731">
+			<TABNAM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">EDI_DC40</TABNAM>
+			<MANDT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">100</MANDT>
+			<DOCNUM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">0000000005014032</DOCNUM>
+			<DOCREL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">731</DOCREL>
+			<STATUS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">30</STATUS>
+			<DIRECT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">1</DIRECT>
+			<OUTMOD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">2</OUTMOD>
+			<EXPRSS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<TEST xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<IDOCTYP xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">INVOIC02</IDOCTYP>
+			<CIMTYP xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">ZINVOIC02</CIMTYP>
+			<MESTYP xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">INVOIC</MESTYP>
+			<MESCOD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<MESFCT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<STD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<STDVRS xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<STDMES xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">INVOIC</STDMES>
+			<SNDPOR xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">SAP</SNDPOR>
+			<SNDPRT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">LS</SNDPRT>
+			<SNDPFC xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<SNDPRN xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">DEV110</SNDPRN>
+			<SNDSAD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<SNDLAD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<RCVPOR xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">A000000046</RCVPOR>
+			<RCVPRT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">LS</RCVPRT>
+			<RCVPFC xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">LS</RCVPFC>
+			<RCVPRN xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">Contoso</RCVPRN>
+			<RCVSAD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<RCVLAD xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<CREDAT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">20130909</CREDAT>
+			<CRETIM xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">105827</CRETIM>
+			<REFINT xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<REFGRP xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<REFMES xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<ARCKEY xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/" />
+			<SERIAL xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/Common/">20130826134941</SERIAL>
+		</EDI_DC40>
+		<E2EDK01005 xmlns="http://Microsoft.LobServices.Sap/2007/03/Types/Idoc/3/INVOIC02/ZINVOIC02/731">
+			<DATAHEADERCOLUMN_SEGNAM>E2EDK01005</DATAHEADERCOLUMN_SEGNAM>
+			<DATAHEADERCOLUMN_MANDT>100</DATAHEADERCOLUMN_MANDT>
+			<DATAHEADERCOLUMN_DOCNUM>0000000005014032</DATAHEADERCOLUMN_DOCNUM>
+			<DATAHEADERCOLUMN_SEGNUM>000001</DATAHEADERCOLUMN_SEGNUM>
+			<DATAHEADERCOLUMN_PSGNUM>000000</DATAHEADERCOLUMN_PSGNUM>
+			<DATAHEADERCOLUMN_HLEVEL>01</DATAHEADERCOLUMN_HLEVEL>
+			<CURCY>EUR</CURCY>
+			<HWAER>EUR</HWAER>
+			<WKURS>1.00000</WKURS>
+			<ZTERM>E60</ZTERM>
+			<KUNDEUINR>5243222</KUNDEUINR>
+			<EIGENUINR>2004236</EIGENUINR>
+			<BSART>INVO</BSART>
+			<BELNR>0090334222</BELNR>
+			<NTGEW>8</NTGEW>
+			<BRGEW>8</BRGEW>
+			<GEWEI>KGM</GEWEI>
+			<FKART_RL>ZLR</FKART_RL>
+			<ABLAD />
+			<BSTZD />
+			<VSART />
+			<VSART_BEZ />
+			<RECIPNT_NO>0001222224</RECIPNT_NO>
+			<AUGRU />
+			<AUGRU_BEZ />
+			<ABRVW />
+			<ABRVW_BEZ />
+			<LIFSK />
+			<LIFSK_BEZ />
+			<EMPST />
+			<ABTNR />
+			<DELCO />
+			<WKURS_M />
+			<SEGMENTPAD />
+		</E2EDK01005>
+	</idocData>
+</Receive>
